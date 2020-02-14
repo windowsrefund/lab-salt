@@ -1,4 +1,8 @@
-This repo should contain states and pillars which will be served via GitFS
+A minimal lab to explore Salt
+
+# Changes
+  * Setup 1 Salt 3000 master
+    * Use only GitFS to serve states and pillars
 
 # GitFS Notes
 

@@ -6,5 +6,7 @@ A minimal lab to explore Salt
 
 # GitFS Notes
 
-In the case of authenticating via pygit2 or GitPython, it is helpful to disable
-strict host key checking in /root/.ssh/config
+[Syntax bug work-around](https://github.com/saltstack/salt/issues/56127)
+
+When interacting with a git repo that resolves in a round-robin style,
+it is helpful to disable strict host key checking in /root/.ssh/config

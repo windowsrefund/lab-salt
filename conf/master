@@ -3,6 +3,9 @@
 fileserver_backend:
   - gitfs
 
+# global subdirectory to from where Salt will serve files from
+gitfs_root: salt
+
 # 2 branches, master and testing, will be available from each repo
 # master will serve the prod environment
 # testing will serve the test environment

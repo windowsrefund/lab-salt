@@ -1,5 +1,5 @@
 # vim: ft=sls
 
-{{ saltenv }}:
+base:
   '*':
     - common

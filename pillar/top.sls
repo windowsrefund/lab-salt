@@ -1,3 +1,3 @@
 base:
   '*':
-    - base
+    - test-base

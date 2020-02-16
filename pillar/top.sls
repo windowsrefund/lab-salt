@@ -1,6 +1,5 @@
-base:
+"{{ saltenv }}":
+
+  # all salt minions
   '*':
-    - test-base
-prod:
-  'minion1':
-    - test-prod
+    - all

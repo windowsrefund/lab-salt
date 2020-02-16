@@ -1,7 +1,7 @@
-# vim: ft=yaml
+# vim: ft=sls
 
 file-tmp-salt-environment:
   file.managed:
     - name: /tmp/salt-environment
-    - source: salt://test-state/salt-environment
+    - source: salt://custom/salt-environment
     - template: jinja

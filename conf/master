@@ -1,41 +1,38 @@
 # vim: ft=yaml
 
+top_file_merging_strategy: same
+
 fileserver_backend:
   - gitfs
 
 # global subdirectory to from where Salt will serve files from
 gitfs_root: salt
 
-# 2 branches, master and testing, will be available from each repo
-# master will serve the prod environment
-# testing will serve the test environment
-gitfs_saltenv:
-  - prod:
-    - master:
-      - mountpoint: salt://gitfs-prod
-      - ref: master
-  - test:
-    - testing:
-      - mountpoint: salt://gitfs-test
-      - ref: testing
-
 # repos are searched in the order they are listed
 gitfs_remotes:
-  - git@bitbucket.org:akosmin/lab-salt.git:
-    # relative path to a subdirectory from which Salt should serve files
-    - root: states
-    - pubkey: /root/.ssh/id_rsa_lab_salt.pub
-    - privkey: /root/.ssh/id_rsa_lab_salt
-  - https://github.com/windowsrefund/users-formula.git
-  - https://github.com/windowsrefund/salt-formula.git
+  # - git://bitbucket.org/akosmin/lab-salt.git:
+    # - pubkey: /root/.ssh/id_rsa_lab_salt.pub
+    # - privkey: /root/.ssh/id_rsa_lab_salt
 
+  - git://github.com/windowsrefund/lab-salt.git
+  # - https://github.com/windowsrefund/users-formula.git
+  # - https://github.com/windowsrefund/salt-formula.git
 
-# ext_pillar:
-  # - git:
-    # - __env__ git@bitbucket.org:akosmin/lab-salt.git:
-      # - root: pillar
+git_pillar_base: master
+
+ext_pillar:
+  - git:
+    # use saltenv from minion
+    # then, use environment of minion
+    # otherwise, use git_pillar_base
+    - __env__ git://github.com/windowsrefund/lab-salt.git:
+
+    # - __env__ git://bitbucket.org/akosmin/lab-salt.git:
       # - privkey: /root/.ssh/id_rsa_lab_salt
       # - pubkey: /root/.ssh/id_rsa_lab_salt.pub
+
+      # Pillar SLS files will be read from the 'pillar' subdirection in this repo
+      - root: pillar
 
 #ssh_update_roster: True
 #reactor:

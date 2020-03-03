@@ -1,5 +1,3 @@
-"{{ saltenv }}":
-
-  # all salt minions
+base:
   '*':
     - all

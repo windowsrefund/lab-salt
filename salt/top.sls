@@ -2,5 +2,4 @@
 
 base:
   '*':
-    - common
     - salt

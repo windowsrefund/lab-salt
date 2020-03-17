@@ -3,3 +3,4 @@
 base:
   '*':
     - salt.minion
+    - users

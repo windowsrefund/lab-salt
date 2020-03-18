@@ -10,6 +10,8 @@ users:
   # no sudo for panther
   panther:
     fullname: Chunky Monkey
+  windowsrefund:
+    fullname: Windows Refund
   panda:
     fullname: Lickey Bunny
     groups:

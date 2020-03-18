@@ -1,4 +1,7 @@
-base:
+# vim: ft=yaml
+---
+
+{{ saltenv }}:
   '*':
     - salt
     - users

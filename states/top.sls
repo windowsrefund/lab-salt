@@ -1,6 +1,7 @@
-# vim: ft=sls
+# vim: ft=yaml
+---
 
-base:
+{{ saltenv }}:
   '*':
     - salt.minion
     - sudoers

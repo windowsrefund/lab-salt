@@ -10,3 +10,5 @@ users:
     fullname: Lickey Bunny
     groups:
       - pans
+    ssh_auth_sources:
+      - salt://users/keys/panda.pub

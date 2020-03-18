@@ -2,3 +2,4 @@ base:
   '*':
     - salt
     - users
+    - sudoers

@@ -3,4 +3,5 @@
 base:
   '*':
     - salt.minion
+    - sudoers
     - users

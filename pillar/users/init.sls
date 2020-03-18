@@ -1,4 +1,5 @@
 # vim: ft=yaml
+---
 
 groups:
   pans:
@@ -6,6 +7,9 @@ groups:
     system: false
 
 users:
+  # no sudo for panther
+  panther:
+    fullname: Chunky Monkey
   panda:
     fullname: Lickey Bunny
     groups:

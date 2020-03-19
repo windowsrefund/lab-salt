@@ -1,4 +1,5 @@
 # vim: ft=yaml
+# https://github.com/saltstack-formulas/users-formula/blob/master/pillar.example 
 ---
 
 groups:
@@ -7,7 +8,8 @@ groups:
     system: false
 
 users:
-  # no sudo for panther
+  cechuser:
+    fullname: Ceph User
   panther:
     fullname: Chunky Monkey
   windowsrefund:

@@ -16,6 +16,8 @@ users:
     absent: true
   cephuser:
     fullname: Ceph User
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNcWPf8M4t/1472lwUKPyiUUwloGbxWR89FFnfZbbx3+G+Ykbf5ytG7kvsOS0zXfxXhkfXgCEgBmz7fsnUJvABc29LMY2p6UoshfjRA0ki5aFLO/jhHWJ1Gd2THX0ado7F/T32OOqw55KNTPdeZCOk3/0IbOgBgutMphLMBk6P8PwKgG9AUtg1+wosbozgKX/qKpuWYLBk/lRr1KnQEvJhYX0tgEHKTDLtjRLMlmDHoGvBVmCnPLSuf8VXOKMb3ZGM6nUlJxpl9P/5wSzB1fA0FWgYaFt7GsD/Q91qWxcuvqKppjxVVz77x9lRsCoE3f2OmU5GGofDuAGSYuKWs8z/ cephuser@ceph-admin
   panther:
     fullname: Chunky Monkey
   windowsrefund:

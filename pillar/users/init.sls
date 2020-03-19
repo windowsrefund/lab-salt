@@ -15,7 +15,6 @@ users:
   cechuser:
     absent: true
   cephuser:
-    absent: true
     fullname: Ceph User
   panther:
     fullname: Chunky Monkey

@@ -8,6 +8,10 @@ groups:
     system: false
 
 users:
+  akosmin:
+    fullname: akosmin
+    groups:
+      - pans
   cechuser:
     fullname: Ceph User
   panther:

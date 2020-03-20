@@ -6,5 +6,5 @@
     - salt.minion
     - sudoers
     - users
-  'salt1':
+  'salt1.lab':
     - salt.master

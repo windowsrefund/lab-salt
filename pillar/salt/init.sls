@@ -11,3 +11,6 @@ salt:
   # minion section
   minion:
     master: salt1
+
+  # master section
+  master_config_use_TOFS: true

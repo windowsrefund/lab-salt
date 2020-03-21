@@ -10,18 +10,22 @@ users:
           - "StrictHostKeyChecking no"
           - "UserKnownHostsFile=/dev/null"
       users-formula:
-        hostname: github.com
+        hostname: users-formula
         options:
+          - "Hostname github.com"
           - "IdentityFile ~/.ssh/github_windowsrefund_users_formula"
       salt-formula:
-        hostname: github.com
+        hostname: salt-formula
         options:
+          - "Hostname github.com"
           - "IdentityFile ~/.ssh/github_windowsrefund_salt_formula"
       sudoers-formula:
-        hostname: github.com
+        hostname: sudoers-formula
         options:
+          - "Hostname github.com"
           - "IdentityFile ~/.ssh/github_windowsrefund_sudoers_formula"
       lab-salt:
-        hostname: github.com
+        hostname: lab-salt
         options:
+          - "Hostname github.com"
           - "IdentityFile ~/.ssh/github_windowsrefund_lab_salt"

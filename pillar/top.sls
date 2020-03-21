@@ -6,3 +6,5 @@
     - salt
     - users
     - sudoers
+  'salt1.lab':
+    - users.salt1

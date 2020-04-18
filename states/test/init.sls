@@ -1,4 +1,4 @@
-{% if grains['osmajorrelease'] > 6 %}
+{% if grains['osmajorrelease'] >= 6 %}
 include:
   - test.graintest
 {% endif %}

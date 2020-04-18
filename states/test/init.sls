@@ -1,4 +1,4 @@
-{% if grains['osmajorrelease'] >= 7 %}
+{% if grains['osmajorrelease'] >= 8 %}
 include:
   - test.7pass
 {% else %}

@@ -1,1 +1,1 @@
-The osmajorrelease grain has a value of {% grains['osmajorrelease'] %}
+The osmajorrelease grain has a value of {{ grains['osmajorrelease'] }}
